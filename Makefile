@@ -24,3 +24,10 @@ prefetcher.o: prefetcher.C prefetcher.h mem-sim.h
 
 clean:
 	rm -f *.o cacheSim
+test:
+	./cacheSim traces/g++.trace
+	./cacheSim traces/grep.trace
+	./cacheSim traces/ls.trace
+	./cacheSim traces/plamap.trace
+	./cacheSim traces/testgen.trace
+	./cacheSim traces/tiny.trace
